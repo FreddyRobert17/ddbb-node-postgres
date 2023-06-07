@@ -32,7 +32,9 @@ const UserSchema = {
 };
 
 class User extends Model {
-  static associate() {}
+  static associate() {
+    //TODO
+  }
 
   static config(sequelize) {
     return {
