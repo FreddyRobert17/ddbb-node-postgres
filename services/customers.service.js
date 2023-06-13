@@ -19,7 +19,6 @@ class CustomerService {
   }
 
   async create(data) {
-    console.log(data, 'FREEEE');
     const newCustomer = await models.Customer.create(data);
     return newCustomer;
   }
