@@ -26,7 +26,6 @@ router.post(
   async (req, res, next) => {
     try {
       const body = req.body;
-      console.log(body, 'RAAAAA');
       res.status(201).json(await service.create(body));
     } catch (error) {
       next(error);
